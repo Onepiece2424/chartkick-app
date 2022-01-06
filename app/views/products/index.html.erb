@@ -30,6 +30,6 @@
 
 <br>
 
-<%= column_chart Product.group(:name).sum(:price), id: "column-chart", width: "800px", height: "500px", colors: ["#b00", "#666"] %>
+<%= column_chart Product.group(:name).count, id: "column-chart", width: "800px", height: "500px", colors: ["#b00", "#666"] %>
 
 <%= link_to 'New Product', new_product_path %>
